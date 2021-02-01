@@ -148,9 +148,9 @@ header nav a:hover {
 }
 .showcase-card {
   position: absolute;
-  top: 16rem;
+  top: 14rem;
   right: 6rem;
-  max-height: 300px;
+  /* max-height: 300px; */
   max-width: 700px;
   z-index: 2;
   display: grid;
@@ -362,7 +362,7 @@ footer p i {
   }
   .showcase-card {
     position: static;
-    margin: 5rem auto;
+    margin: 8rem auto;
   }
   .showcase-text {
     text-align: center;
@@ -383,16 +383,23 @@ footer p i {
     font-size: 1.1rem;
   }
   .about {
-    padding-top: 4rem;
+    padding-top: 1rem;
   }
   .about-text {
     padding: 1rem;
+    margin-top: 5rem;
   }
   .about-text p {
     margin-right: 3rem;
   }
   .about-text .title-underline {
     margin-left: 2rem;
+  }
+  .projects-cards .card {
+    padding: 0;
+    width: 45%;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
   }
   .projects-cards,
   .goals-cards {
@@ -469,19 +476,25 @@ footer p i {
     position: static;
     max-height: 100%;
     grid-template-columns: 1fr;
-    margin: 5rem auto;
+    margin: 4.5rem auto;
   }
   .showcase-card img {
     width: 100px;
     height: 100px;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     object-fit: cover;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+  .showcase-card-text-bottom {
+    margin-top: 0;
+    padding: 1rem;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 
   .about {
-    margin-top: 18rem;
+    margin-top: 15rem;
     height: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url('images/about.jpg') center/cover no-repeat fixed;
