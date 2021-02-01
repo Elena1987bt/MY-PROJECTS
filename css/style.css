@@ -1,0 +1,554 @@
+body {
+  background: white;
+  color: #333;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7rem;
+  background: white;
+  z-index: 5;
+}
+.modal {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+.header-top-right a {
+  color: white;
+  text-decoration: none;
+  transition: color 1s linear;
+}
+
+.header-top-right a:hover {
+  color: grey;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  border: none !important;
+}
+
+.logo-container img {
+  width: 5rem;
+}
+
+.navbar-collapse {
+  border-top: 0.01rem solid grey;
+  background: white;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item:hover {
+  color: #333;
+  border-bottom: 0.1rem solid #333;
+  margin-bottom: -0.1rem !important;
+}
+ul {
+  padding-left: 0 !important;
+}
+.nav-link {
+  color: #333;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.nav-icons i {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-icons img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.nav-icons:first-child {
+  border-right: 1rem solid #333;
+}
+
+nav {
+  padding: 0 !important;
+  border-bottom: 0.01rem solid grey;
+}
+
+/* Shpwcase */
+.showcase {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+
+  /* transition: all 1s ease-in-out; */
+}
+
+.showcase:hover .showcase-img {
+  background: linear-gradient(
+      rgba(169, 169, 169, 0.5),
+      rgba(169, 169, 169, 0.5)
+    ),
+    url('../img/audi-1.jpeg') center/cover fixed no-repeat;
+  transform: scale(1.2);
+}
+
+.showcase-img {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url('../img/audi-1.jpeg') center/cover fixed no-repeat;
+  width: 100%;
+  /* height: 60vh; */
+  height: calc(100vh - 130px);
+  transition: all 1s ease-in-out;
+}
+
+.showcase-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase-title {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.showcase-text {
+  width: 70%;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.showcase-btn {
+  display: inline-block;
+  background: transparent;
+  border: 0.1rem solid white;
+  padding: 1rem 4rem;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.5s linear;
+}
+
+.showcase-btn:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+/* About */
+.about-title {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+  word-spacing: 1rem;
+}
+
+.about-text {
+  width: 60%;
+  margin: 3rem auto;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.about-item {
+  padding: 0.15rem;
+}
+
+.card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none !important;
+  cursor: pointer;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 20rem;
+  transition: all 1s ease-in-out;
+}
+
+.img-container {
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0));
+  transition: all 1s ease-in-out;
+}
+
+.img-container:hover .card-img-top {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+/* info-1 section */
+.info-1 {
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+}
+
+.info-banner {
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url('../img/car-1.jpeg') center/cover fixed no-repeat;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.info-1:hover .info-banner {
+  transform: scale(1.2);
+}
+
+.info-1-img {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.info-1-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  z-index: 1;
+  margin-top: 2rem !important;
+}
+
+.info-btn {
+  display: inline-block;
+  background: transparent;
+  border: 0.1rem solid white;
+  padding: 1rem 3rem;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.5s linear;
+  width: 50%;
+}
+.info-btn:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+/* info-2 section  */
+.info-2 .card {
+  margin: 0;
+}
+
+.info-2 .card-img-top {
+  height: 15rem;
+}
+
+.info-2-item {
+  padding: 0 0.15rem;
+}
+
+/* info-3 -section */
+.info-3 {
+  background: #f5f5f5;
+  padding: 3rem 0;
+}
+
+.info-3-img img {
+  width: 100%;
+}
+
+.info-btn-3 {
+  color: black;
+  border: 0.01rem solid black;
+  border-radius: none !important;
+  transition: all 0.5s linear;
+}
+
+.info-btn-3:hover {
+  color: black;
+  transform: scale(1.05);
+}
+
+/* cars section */
+.cars {
+  background: #f5f5f5;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  transition: all 0.5s ease-in-out;
+}
+
+.cars-img {
+  height: 14rem;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.img-container:hover .cars-img {
+  transform: scale(1.15);
+  opacity: 0.5;
+}
+
+.car-item {
+  padding: 0.15rem 0.15rem;
+}
+
+.cars-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+/* Contact */
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('../img/background-1.jpeg') center/cover fixed no-repeat;
+  height: 50vh;
+}
+
+.contact-form {
+  text-align: left;
+}
+
+.contact-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-form input[type='text'] {
+  font-size: 1rem;
+  color: white;
+  width: 60%;
+  padding: 0 0 0.8rem 0;
+  background: transparent;
+  border: none;
+  border-bottom: 0.1rem solid white;
+  outline: none;
+  text-align: left;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.contact-form button {
+  width: 35%;
+  padding: 1rem;
+  outline: none;
+  color: grey;
+  border: none;
+  font-weight: bold;
+}
+
+/* Footer */
+.social-icons {
+  margin-top: 10rem;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+.social-icons a:hover {
+  color: grey;
+}
+
+.sweden-flag img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.sweden-flag-text p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.footer-services {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.footer-services h6 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.footer-services p {
+  color: grey;
+}
+
+.legal a,
+.legal span {
+  margin-left: 1.5rem;
+  color: grey;
+  text-decoration: none;
+}
+.legal a:hover {
+  color: black;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+/* media queries */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header {
+    height: 5rem;
+  }
+  .header-top {
+    display: none;
+  }
+
+  .nav-icons span,
+  .nav-icons img {
+    display: none;
+  }
+  .nav-item:hover {
+    border-bottom: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .navbar .container {
+    margin-left: 1rem;
+  }
+  nav {
+    border-bottom: none;
+  }
+  .showcase {
+    height: 80vh;
+  }
+  .showcase-title {
+    font-size: 2rem;
+  }
+
+  .about-title {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-text {
+    width: 100%;
+    text-align: justify !important;
+  }
+
+  .info-1 {
+    padding: 1rem !important;
+    height: 50vh !important;
+  }
+
+  .info-1-img img {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .info-btn {
+    padding: 1rem;
+  }
+
+  .contact-container {
+    width: 100%;
+  }
+
+  .contact h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .social-icons {
+    margin-top: 7rem;
+  }
+
+  .footer-services {
+    display: block;
+  }
+
+  .footer-service-item {
+    margin: 1rem auto;
+    width: 80%;
+    border-bottom: 0.01rem dotted lightgrey;
+  }
+
+  .legal span {
+    display: none;
+  }
+
+  .legal {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-gap: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .info-1-content {
+    padding-top: 4rem !important;
+  }
+  .showcase-btn,
+  .showcase-text {
+    display: none;
+  }
+  .info-1 {
+    height: 110vh;
+    padding: 1rem !important;
+  }
+  .info-1-img {
+    margin-top: 0 !important;
+  }
+  .info-1-content {
+    padding-top: 1rem !important;
+    text-align: center;
+  }
+  .info-btn {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+  }
+  .contact-container {
+    width: 100%;
+  }
+
+  .nav-item:hover {
+    border-bottom: 0.01rem solid grey;
+  }
+  .footer {
+    margin-top: -5rem !important;
+    margin-left: -2rem !important;
+  }
+}
