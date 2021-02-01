@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300&display=swap');
+/* Basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.5;
+  background-color: #fff;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  width: 100%;
+}
+
+/* Utilities */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.4rem 0;
+}
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.btn {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(197, 45, 172);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s ease-in;
+}
+.btn:hover {
+  background: rgb(197, 45, 172);
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+}
+.section-title h1 {
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+  text-transform: capitalize;
+}
+.section-title span {
+  color: rgb(197, 45, 172);
+}
+.title-underline {
+  width: 100px;
+  height: 5px;
+  background-color: rgb(197, 45, 172);
+}
+
+/* Header */
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+}
+.logo span {
+  color: rgb(197, 45, 172);
+}
+.logo:hover {
+  transform: scale(0.98);
+  color: rgb(197, 45, 172);
+}
+.btn-toggler {
+  display: none;
+  background: transparent;
+  color: rgb(197, 45, 172);
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.btn-toggler:hover {
+  color: #333;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-right: 1rem;
+  margin-top: 0.7rem;
+}
+
+header nav a {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  transition: all 0.4s ease-in;
+}
+header nav a:hover {
+  color: rgb(197, 45, 172);
+  transform: scale(0.98);
+}
+/* Showcase */
+.showcase {
+  background: url(images/showcase.jpg);
+  height: 70vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 55% auto;
+}
+.showcase-text {
+  align-self: center;
+  color: #fff;
+  margin-left: 8rem;
+}
+.showcase-text h1,
+.showcase-text h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 300;
+}
+.showcase-text h1 {
+  font-size: 3.5rem;
+}
+.showcase-text h2 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.showcase-text a {
+  font-size: 1.2rem;
+}
+.showcase-card {
+  position: absolute;
+  top: 16rem;
+  right: 6rem;
+  max-height: 300px;
+  max-width: 700px;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+.showcase-card img {
+  width: 100%;
+  height: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.showcase-card-text {
+  display: flex;
+  flex-direction: column;
+}
+.showcase-card-text-top {
+  padding: 2rem;
+  color: #a39b9b;
+}
+.showcase-card-text h1 {
+  color: rgb(197, 45, 172);
+}
+.showcase-card-text p {
+  margin: 0.7rem 0;
+  text-transform: capitalize;
+}
+.showcase-card-info p {
+  text-transform: lowercase;
+}
+.showcase-card-text i {
+  color: rgb(197, 45, 172);
+  margin-right: 0.5rem;
+}
+.showcase-card-text-bottom {
+  margin-top: 2.45rem;
+  background-color: rgb(197, 45, 172);
+  text-align: center;
+  padding: 1rem;
+  border-bottom-right-radius: 10px;
+}
+.showcase-card-text-bottom i,
+.footer-icons i {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  transition: transform 0.3s ease-in;
+}
+.showcase-card-text-bottom i:hover {
+  transform: scale(1.2);
+}
+/* About  */
+.about {
+  margin-top: 10rem;
+  height: 70vh;
+  background: url('images/about.jpg') center/cover no-repeat fixed;
+}
+.about-text {
+  width: 50%;
+  float: right;
+  color: #a39b9b;
+}
+.about-text p {
+  margin: 1rem 0;
+  padding-right: 1.5rem;
+  font-size: 1.1rem;
+}
+/* Projects */
+.projects {
+  margin: 3rem 0;
+  clear: both;
+}
+.projects-background {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(19, 18, 18, 0.5)),
+    url('images/skills.jpg');
+}
+.projects .section-title,
+.goals .section-title {
+  text-align: center;
+}
+.projects .title-underline,
+.goals .title-underline {
+  margin: 0 auto;
+}
+.projects-cards,
+.goals-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 4rem;
+  padding: 4rem;
+}
+.goals-cards {
+  padding: 0;
+  margin: 2rem;
+}
+.projects-cards .card {
+  padding: 0;
+  width: 30%;
+  background: whitesmoke;
+  transition: all 0.5s linear;
+  margin-bottom: 3rem;
+}
+.projects-cards .card:hover {
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.projects-cards .card:hover .card-text h4 {
+  color: white;
+}
+.goals-cards .card {
+  width: 30%;
+  padding: 2rem;
+  text-align: center;
+  transition: all 2s ease-in-out;
+}
+.goals-cards .card {
+  background: white;
+}
+
+.goals-cards .card:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+.projects-cards img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+.projects-cards .card-text h4 {
+  color: black;
+  margin-bottom: 0.5rem;
+}
+.projects-cards .card-text {
+  text-align: center;
+  color: rgb(197, 45, 172);
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+.projects-cards .card-text i {
+  color: rgb(197, 45, 172);
+  margin: 0.5rem 0;
+  transition: transform 0.5s ease-in-out;
+}
+.projects-cards .card-text i:hover {
+  transform: scale(1.2);
+  color: white;
+}
+.goals-cards ul a {
+  color: #a39b9b;
+  font-size: 1.1rem;
+  transition: all 0.5s ease-in;
+  text-transform: capitalize;
+}
+.goals-cards h1 {
+  color: rgb(197, 45, 172);
+  text-transform: capitalize;
+}
+
+.goals-cards img {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.goals-cards li {
+  margin: 0.2rem 0;
+}
+.goals-cards li:hover a {
+  color: rgb(197, 45, 172);
+}
+/* Footer */
+footer {
+  background-color: rgb(20, 20, 20);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+footer p {
+  margin-bottom: 1.5rem;
+  word-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+footer p i {
+  color: rgb(197, 45, 172);
+}
+.footer-icons i {
+  color: rgb(197, 45, 172);
+  transition: color 0.5s ease-in;
+}
+.footer-icons i:hover {
+  color: #fff;
+}
+
+/* Media queries */
+/* Tablet */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .logo {
+    padding-left: 1rem;
+  }
+  .showcase {
+    grid-template-columns: 1fr;
+    position: static;
+    height: 50vh;
+  }
+  .showcase-card {
+    position: static;
+    margin: 5rem auto;
+  }
+  .showcase-text {
+    text-align: center;
+    margin: 0;
+  }
+
+  .showcase-text h1,
+  .showcase-text h2 {
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .showcase-text a {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+  .about {
+    padding-top: 4rem;
+  }
+  .about-text {
+    padding: 1rem;
+  }
+  .about-text p {
+    margin-right: 3rem;
+  }
+  .about-text .title-underline {
+    margin-left: 2rem;
+  }
+  .projects-cards,
+  .goals-cards {
+    padding: 3rem 0;
+  }
+  .projects-cards .card-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .goals-cards img {
+    width: 100px;
+    height: 80px;
+  }
+}
+/* Tablet portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .about {
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+/* Smartphones */
+@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+  nav {
+    flex-direction: column;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    padding-left: 1rem;
+    margin-top: 0;
+  }
+  .btn-toggler {
+    display: block;
+  }
+
+  .links a {
+    padding: 0.8rem 1rem;
+    font-size: 1.1rem;
+    transition: all 0.5s ease-in;
+  }
+  .links {
+    flex-direction: column;
+    height: 0rem;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  .show-links {
+    height: 8rem;
+  }
+  .showcase {
+    grid-template-columns: 1fr;
+    position: static;
+    height: 50vh;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin: 0;
+  }
+
+  .showcase-text h1,
+  .showcase-text h2 {
+    font-size: 2rem;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  .showcase-card {
+    position: static;
+    max-height: 100%;
+    grid-template-columns: 1fr;
+    margin: 5rem auto;
+  }
+  .showcase-card img {
+    width: 100px;
+    height: 100px;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .about {
+    margin-top: 18rem;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url('images/about.jpg') center/cover no-repeat fixed;
+    padding-top: 8rem;
+  }
+  .about-text {
+    width: 70%;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+  .about-text .title-underline {
+    margin: 0 auto;
+  }
+  .projects-cards,
+  .goals-cards {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 1rem;
+    padding: 3rem 2rem;
+  }
+  .projects-cards .card,
+  .goals-cards .card {
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 768px) and (orientation: landscape) {
+  .showcase-text h1,
+  .showcase-text h2 {
+    font-size: 2rem;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .showcase-text a {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .showcase-card {
+    position: static;
+    max-height: 100%;
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  .showcase-card img {
+    margin-bottom: 0;
+  }
+  .showcase-card-text-top {
+    padding-top: 1rem;
+  }
+
+  .projects-cards,
+  .goals-cards {
+    padding: 4rem;
+  }
+  .projects-cards .card .goals-cards .card {
+    padding: 2rem 0;
+  }
+}
