@@ -1,0 +1,31 @@
+body {
+  position: relative;
+}
+.section-center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.icon-delete {
+  color: red;
+  cursor: pointer;
+}
+.icon-edit {
+  color: green;
+  cursor: pointer;
+}
+.todo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-color: 1px solid grey;
+  margin-right: 5px;
+}
+
+.todo-item > * {
+  margin-right: 10px;
+}
