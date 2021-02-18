@@ -1,0 +1,65 @@
+.banner {
+  height: 70%;
+  position: relative;
+  background: url('https://images.pexels.com/photos/1417642/pexels-photo-1417642.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
+    fixed center center/cover no-repeat;
+}
+.banner__info {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20vh 50px 50px 40px;
+  width: 40vw;
+  max-width: 300px;
+  height: 243px;
+}
+.banner__search {
+  display: flex;
+  flex-direction: column;
+}
+.banner__info > button {
+  color: white;
+  background-color: #ff7779 !important;
+  text-transform: inherit;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.banner__searchButton {
+  background-color: white !important;
+  font-weight: 900;
+  text-transform: inherit !important;
+  color: #ff7779 !important;
+}
+.banner__info > button:hover {
+  background-color: white !important;
+  color: #ff7779;
+}
+
+.banner__info h5 {
+  margin-top: 10px;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .banner__info {
+    height: 423px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .banner__info {
+    height: 298px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .banner__info {
+    height: 340px;
+    padding-top: 40px;
+    z-index: 100;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: landscape) {
+  .banner__info {
+    height: 165px;
+    padding-top: 10px;
+  }
+  .banner__info h1 {
+    font-size: 28px;
+  }
+}
