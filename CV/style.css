@@ -286,6 +286,7 @@ header nav a:hover {
 .projects-cards .card-text h4 {
   color: black;
   margin-bottom: 0.5rem;
+  text-transform: capitalize;
 }
 .projects-cards .card-text {
   text-align: center;
