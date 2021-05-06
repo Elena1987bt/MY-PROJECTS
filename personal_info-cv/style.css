@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.subtitle {
+  color: gray;
+  text-transform: uppercase;
+}
+.title {
+  margin: 1rem 0;
+}
+.subtitle__right {
+  margin: 0.4rem 0;
+  color: gray;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.container {
+  margin: 0.5rem auto;
+  max-width: 1024px;
+  background-color: white;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px #888888;
+}
+.main {
+  display: flex;
+}
+.main__left {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  flex: 0.3;
+  background-color: rgb(56, 2, 56);
+  color: #fff;
+  padding: 3rem 2rem;
+}
+.main__left img {
+  width: 6rem;
+  object-fit: contain;
+  border-radius: 900px;
+}
+.main__leftInfo {
+  text-align: center;
+}
+.main__leftInfo h3 {
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+.underline {
+  width: 2rem;
+  height: 0.1rem;
+  margin: 0 auto;
+  background-color: grey;
+  margin-bottom: 1rem;
+}
+.main__leftInfo p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.main__leftDetails,
+.main__leftHobbies,
+.main__leftLinks,
+.main__leftSkills {
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+.main__leftDetails p,
+.main__leftHobbies p,
+.main__leftLinks p {
+  margin: 0.3rem 0;
+  font-size: 0.8rem;
+}
+.main__leftDetails div {
+  margin: 1.5rem 0;
+}
+.main__leftHobbies {
+  margin-top: 5rem;
+}
+.main__leftLinks i {
+  margin-right: 0.4rem;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+.main__right {
+  flex: 0.7;
+  padding: 4rem 3rem;
+}
+.main__right p {
+  font-size: 0.9rem;
+}
+.education__item {
+  margin-bottom: 1.2rem;
+}
