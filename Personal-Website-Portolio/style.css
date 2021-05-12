@@ -266,7 +266,7 @@ header nav a:hover {
   width: 30%;
   padding: 2rem;
   text-align: center;
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .goals-cards .card {
   background: white;
@@ -276,6 +276,7 @@ header nav a:hover {
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
+
 .projects-cards img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
